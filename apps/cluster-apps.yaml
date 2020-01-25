@@ -1,4 +1,4 @@
-repository: https://github.com/baloise-incubator/cluster-config.git
+repository: https://github.com/baloise-incubator/cluster-apps.git
 #argocdNamespace: "argocd"
 #server: "https://kubernetes.default.svc"
 namespace:
@@ -22,5 +22,10 @@ namespaceResourceBlacklist:
 
 applications:
    argocd:
-   sealed-secrets:
    chartmuseum:
+   guacamole:
+   keycloak:
+   openshift-acme:
+   rook-ceph:
+   sealed-secrets:
+   strimzi:
