@@ -1,6 +1,5 @@
-a: b
 repository: https://github.com/baloise-incubator/apps-root-config.git
 
 bootstrap:
-  cluster:
-  christiansiegel:
+  - name: cluster
+  - name: christiansiegel
