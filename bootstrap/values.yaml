@@ -1,3 +1,4 @@
+a: b
 repository: https://github.com/baloise-incubator/apps-root-config.git
 
 bootstrap:
