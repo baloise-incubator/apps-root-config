@@ -7,10 +7,15 @@ spec:
   sourceRepos:
     - '{{ .Values.repository }}'
   destinations:
+{{ if .Values.allowAllNamespaces }}
+  - namespace: '*'
+    server: {{ default "https://kubernetes.default.svc" $.Values.server}}
+{{- else }}
 {{- range $key, $value := .Values.applications }}
   - namespace: {{ $key }}
     server: {{ default "https://kubernetes.default.svc" $.Values.server}}
 {{ end }}
+  {{- end }}
 {{- if .Values.clusterResourceWhitelist }}
   clusterResourceWhitelist:
 {{- toYaml .Values.clusterResourceWhitelist | nindent 4 -}}
