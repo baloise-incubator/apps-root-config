@@ -94,8 +94,8 @@ roleRef:
   name: {{ .clusterRoleName }}
 subjects:
   - apiGroup: rbac.authorization.k8s.io
-    kind: Group
-    name: {{ .groupName }}
+    kind: {{ .kind }}
+    name: {{ .name }}
 {{ end }}
 {{ end }}
 {{ end }}

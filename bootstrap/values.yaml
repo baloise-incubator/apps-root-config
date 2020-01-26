@@ -3,3 +3,4 @@ repository: https://github.com/baloise-incubator/apps-root-config.git
 #server: "https://kubernetes.default.svc"
 bootstrap:
   cluster:
+  christiansiegel:
