@@ -3,3 +3,4 @@ repository: https://github.com/baloise-incubator/apps-root-config.git
 bootstrap:
   - name: cluster
   - name: christiansiegel
+  - name: table-tennis-tournament

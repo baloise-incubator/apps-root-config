@@ -1,0 +1,39 @@
+repository: https://github.com/table-tennis-tournament/deployment-configuration.git
+#argocdNamespace: "argocd"
+#server: "https://kubernetes.default.svc"
+namespace:
+  annotations: {}
+  labels: {}
+
+enableDefaultNetworkPolicy: false
+enableDefaultLimitRange: true
+allowAllNamespaces: false
+
+roleBindings:
+  - name: christiansiegel
+    kind: User
+    clusterRoleName: admin
+  - name: leubedane
+    kind: User
+    clusterRoleName: admin
+  - name: kullmanp
+    kind: User
+    clusterRoleName: admin
+  - name: luechtdiode
+    kind: User
+    clusterRoleName: admin
+  - name: lennartx
+    kind: User
+    clusterRoleName: admin
+  - name: arburk
+    kind: User
+    clusterRoleName: admin
+  - name: yannickholzenkamp
+    kind: User
+    clusterRoleName: admin
+
+clusterResourceWhitelist:
+namespaceResourceBlacklist:
+
+applications:
+  ttt-match-management:
