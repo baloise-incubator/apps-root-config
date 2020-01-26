@@ -18,4 +18,4 @@ clusterResourceWhitelist:
 namespaceResourceBlacklist:
 
 applications:
-  ttt-match-management:
+  tournament-registration:
