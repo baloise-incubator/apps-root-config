@@ -1,7 +1,7 @@
 {{- range $key, $value := .Values.applications -}}
 {{- $disabled := false}}
 {{- $server := "https://kubernetes.default.svc" }}
-{{- $path := false }}
+{{- $path := $key }}
 {{- $source := false }}
 {{- $disableAutoSync := false }}
 {{- $automatedPrune := true }}

@@ -2,4 +2,4 @@ repository: https://github.com/baloise-incubator/apps-root-config.git
 #argocdNamespace: argocd
 #server: "https://kubernetes.default.svc"
 bootstrap:
-  cluster-apps:
+  cluster:
