@@ -4,3 +4,4 @@ bootstrap:
   - name: cluster
   - name: christiansiegel
   - name: table-tennis-tournament
+  - name: tournament-registration

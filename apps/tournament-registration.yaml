@@ -1,0 +1,21 @@
+repository: https://github.com/leubedane/registration-deployment.git
+#argocdNamespace: "argocd"
+#server: "https://kubernetes.default.svc"
+namespace:
+  annotations: {}
+  labels: {}
+
+enableDefaultNetworkPolicy: false
+enableDefaultLimitRange: true
+allowAllNamespaces: false
+
+roleBindings:
+  - name: leubedane
+    kind: User
+    clusterRoleName: admin
+
+clusterResourceWhitelist:
+namespaceResourceBlacklist:
+
+applications:
+  ttt-match-management:
