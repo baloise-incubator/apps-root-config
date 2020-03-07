@@ -31,4 +31,3 @@ applications:
    sealed-secrets:
    strimzi:
    harbor:
-   gloo-system:
