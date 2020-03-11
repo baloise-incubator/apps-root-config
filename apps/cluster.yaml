@@ -22,13 +22,15 @@ namespaceResourceBlacklist:
 #    kind: 'DaemonSet'
 
 applications:
-   argocd:
-   chartmuseum:
-   guacamole:
-   keycloak:
-   openshift-acme:
-   rook-ceph:
-   sealed-secrets:
-   strimzi:
+  argo:
+  argo-events:
+  argocd:
+  chartmuseum:
+  guacamole:
+  keycloak:
+  openshift-acme:
+  rook-ceph:
+  sealed-secrets:
+  strimzi:
    harbor:
    gloo-system:
