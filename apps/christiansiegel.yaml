@@ -13,9 +13,6 @@ roleBindings:
   - name: christiansiegel
     kind: User
     clusterRoleName: admin
-  - kind: ServiceAccount
-    name: argo-events-sa
-    apiGroup: gateways.argoproj.io 
 
 applications:
   playground:
