@@ -15,4 +15,5 @@ roleBindings:
     clusterRoleName: admin
 
 applications:
-  playground:
+  batchtest:
+  zally:
