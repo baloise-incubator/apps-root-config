@@ -1,0 +1,18 @@
+repository: https://github.com/christiansiegel/okd4-deployment-configuration.git
+#argocdNamespace: "argocd"
+#server: "https://kubernetes.default.svc"
+namespace:
+  annotations: {}
+  labels: {}
+
+enableDefaultNetworkPolicy: false
+enableDefaultLimitRange: true
+allowAllNamespaces: false
+
+roleBindings:
+  - name: christiansiegel
+    kind: User
+    clusterRoleName: admin
+
+applications:
+  zally:
