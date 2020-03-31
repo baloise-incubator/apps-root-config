@@ -15,4 +15,3 @@ roleBindings:
     clusterRoleName: admin
 
 applications:
-  zally:
